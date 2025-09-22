@@ -52,10 +52,10 @@ void inputPlaylist(Playlist * sptr) {
     cin >> sptr->id;
     sptr -> songs = new Song[NR_SONGS];
     for (int i = 0; i < NR_SONGS; i++) {
-        cout << "Song #" << i + 1 << "title: ";
+        cout << "Song #" << i + 1 << " title: ";
         cin.ignore();
         getline(cin, sptr->songs[i].title);
-        cout << "Song #" << i+ 1 << "duration (seconds): ";
+        cout << "Song #" << i+ 1 << " duration (seconds): ";
         cin >> sptr->songs[i].duration;
     }
     cin.ignore();
